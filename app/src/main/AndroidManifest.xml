@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.nccu.mis.passpair">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_passpair_launch"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Homepage.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBarCustom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Homepage.MainActivity"
+            android:theme="@style/AppTheme.NoActionBarCustom" />
+        <activity
+            android:name=".Homepage.Login"
+            android:label="用戶登入" />
+        <activity
+            android:name=".Homepage.Register"
+            android:label="用戶註冊" />
+        <activity android:name=".Homepage.Photo" />
+        <activity
+            android:name=".Homepage.HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Match.Match"
+            android:label="配對" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".PassIndex.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".PassIndex.Second"
+            android:label="@string/title_activity_second" />
+        <activity
+            android:name=".FriendInvite.FriendMail"
+            android:label="@string/title_activity_friend_mail" />
+        <activity android:name=".Chat.ChatDialogActivity" />
+        <activity android:name=".Chat.ListUsersActivity" />
+        <activity android:name=".Chat.ChatMessageActivity" />
+        <activity android:name=".Gift.GiftReceived" />
+        <activity android:name=".Gift.GiftSending" />
+        <activity android:name=".Homepage.Friendpage.FriendPage" />
+        <activity android:name=".Post.PostUpload" />
+        <activity android:name=".Post.PostLoad" />
+        <activity android:name=".Match.Brainwave" />
+        <activity android:name=".Match.Smile" />
+        <activity android:name=".RandomCall.CallMainActivity" />
+        <activity android:name=".RandomCall.CallSelectActivity" />
+        <activity android:name=".RandomCall.QuestionRandomActivity" />
+        <activity android:name=".RandomCall.QuestionConfirmActivity" />
+        <activity android:name=".Task.MissionList"></activity>
+    </application>
+
+</manifest>
