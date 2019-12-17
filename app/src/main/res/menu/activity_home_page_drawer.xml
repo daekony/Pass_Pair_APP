@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="個人首頁" />
+        <item
+            android:id="@+id/nav_pair"
+            android:icon="@drawable/ic_leak_add_black_24dp"
+            android:title="契合度推薦" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="愛在轉角" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+            android:title="限時通話" />
+        <item
+            android:id="@+id/nav_voicephoto"
+            android:icon="@drawable/ic_add_a_photo_black_24dp"
+            android:title="圖片上傳" />
+    </group>
+</menu>

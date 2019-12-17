@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bottom_post"
+            android:icon="@drawable/home_bar_post"
+            android:title="" />
+        <item
+            android:id="@+id/bottom_friend"
+            android:icon="@drawable/home_bar_friends"
+            android:title="" />
+        <item
+            android:id="@+id/bottom_info"
+            android:icon="@drawable/home_bar_profile"
+            android:title="" />
+        <item
+            android:id="@+id/bottom_manu"
+            android:icon="@drawable/home_bar_manu"
+            android:title="" />
+    </group>
+</menu>
