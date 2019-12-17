@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="task">
+        <item>每日登入</item>
+        <item>上傳個性錄音</item>
+        <item>贈送禮物給好友</item>
+        <item>使用隨機通話功能</item>
+        <item>使用腦波或微笑配對</item>
+    </string-array>
+    <string-array name="taskpoint">
+        <item>20積分</item>
+        <item>30積分</item>
+        <item>30積分</item>
+        <item>30積分</item>
+        <item>30積分</item>
+    </string-array>
+</resources>
