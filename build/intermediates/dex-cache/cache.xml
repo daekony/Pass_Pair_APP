@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\passpairmaster\Final\PassPair\app\libs\PhotoUtil.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caf49e92eae4ca2805d530a92cb4777c1ef53f53">
+        <dex dex="D:\passpairmaster\Final\PassPair\app\build\intermediates\pre-dexed\debug\PhotoUtil_a5f60eca3bea156ac0ef9420fa1413895c24ece4.jar" />
+    </item>
+
+</items>
