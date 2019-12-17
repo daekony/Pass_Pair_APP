@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "938410790174",
+    "firebase_url": "https://passpair-afc4a.firebaseio.com",
+    "project_id": "passpair-afc4a",
+    "storage_bucket": "passpair-afc4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938410790174:android:12fea212000797d4",
+        "android_client_info": {
+          "package_name": "edu.nccu.mis.passpair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938410790174-lda598053fe0hkptisqhb8ai7gf9jq26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.nccu.mis.passpair",
+            "certificate_hash": "3d16ed56eaaa3166a8d430e9d7735034ba44395c"
+          }
+        },
+        {
+          "client_id": "938410790174-vgrv69kj5p2iqckemlvi1e1jr1jsm14l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAgs56EPUxkoic0LtrEqNjsgJT48Gpyo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938410790174-vgrv69kj5p2iqckemlvi1e1jr1jsm14l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
