@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/mission_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mission_list_complete"
+        android:layout_marginLeft="30dp"
+        android:text="123456789"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mission_list_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/mission_list_name"
+        android:text="987654321"
+        android:textSize="16dp" />
+    <ImageView
+        android:id="@+id/mission_list_complete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_mission_undone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

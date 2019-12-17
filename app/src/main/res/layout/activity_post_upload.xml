@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.Post.PostUpload">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="上傳個人相片及語音"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/postupload_textView" />
+
+    <ImageView
+        android:id="@+id/postupload_imageShow"
+        android:src="@drawable/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postupload_textView"
+        android:layout_above="@+id/postupload_audioFunction"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:id="@+id/postupload_audioFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/postupload_txtRec"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/postupload_imgPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/playlist"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/postupload_imgRecord"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/microphone"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/postupload_imgStop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/postupload_imgRecord"
+            android:layout_toRightOf="@+id/postupload_imgRecord"
+            android:layout_weight="1"
+            android:src="@drawable/find" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postupload_txtRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按麥克風開始錄製"
+        android:textSize="25sp"
+        android:layout_above="@+id/postupload_upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <!--<Button
+        android:text="上傳"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/upload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+    <!--android:visibility="invisible" -->
+    <Button
+        android:text="上傳"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/postupload_upload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+</RelativeLayout>

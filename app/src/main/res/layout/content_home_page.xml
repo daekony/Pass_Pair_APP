@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.nccu.mis.passpair.Homepage.HomePage"
+    tools:showIn="@layout/app_bar_home_page">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageHome"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_gravity="left|top"
+        android:src="@drawable/image"
+        app:civ_border_color="#f1e6e6fa"
+        app:civ_border_width="1dp"
+        android:padding="7dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/BottombarHome"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="150dp">
+
+    </com.roughike.bottombar.BottomBar>
+
+    <TextView
+        android:id="@+id/txtNameHome"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageHome"
+        android:layout_toRightOf="@+id/imageHome"
+        android:gravity="center"
+        android:text="使用者名稱"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPostsHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNameHome"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageHome"
+        android:text="0  Post"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtFriendsHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/txtPostsHome"
+        android:layout_toRightOf="@+id/txtPostsHome"
+        android:text="0  Friend"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPostsHome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageHome"
+        android:text="Love is not free,the price is your heart"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <FrameLayout
+        android:id="@+id/Replace_Home_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BottombarHome"></FrameLayout>
+</RelativeLayout>

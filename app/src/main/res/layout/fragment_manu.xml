@@ -1,0 +1,272 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.Homepage.Fragment.ManuFragment"
+    android:padding="15dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <ImageButton
+                            android:id="@+id/callmanuhome"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:src="@drawable/manu_randomcall" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/callmanuhome"
+                            android:layout_centerInParent="true"
+                            android:text="Random Call"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <ImageButton
+                            android:id="@+id/matchmanuhome"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:src="@drawable/manu_matchrecommand" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/matchmanuhome"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="7dp"
+                            android:text="Match"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <ImageButton
+                            android:id="@+id/passmanuhome"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:src="@drawable/manu_passindex" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/passmanuhome"
+                            android:layout_centerInParent="true"
+                            android:text="Pass Index"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/table_profile_home">-->
+
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/settingmanuhome"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:layout_marginTop="15dp"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:background="#00000000"-->
+                            <!--android:src="@drawable/manu_settings" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/settingmanuhome"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:text="Settings"-->
+                            <!--android:textSize="25dp" />-->
+                    <!--</RelativeLayout>-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <ImageButton
+                            android:id="@+id/task"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:src="@drawable/task" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/task"
+                            android:layout_centerInParent="true"
+                            android:text="Task"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_profile_home">
+
+                            <ImageButton
+                                android:id="@+id/textmessage"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="15dp"
+                                android:scaleType="centerCrop"
+                                android:background="#00000000"
+                                android:src="@drawable/ic_message" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textmessage"
+                                android:layout_centerInParent="true"
+                                android:text="Message"
+                                android:textSize="25dp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_profile_home">
+                            <ImageButton
+                                android:id="@+id/postupload_manu"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="15dp"
+                                android:scaleType="centerCrop"
+                                android:background="#00000000"
+                                android:src="@drawable/ic_post_upload" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/postupload_manu"
+                                android:layout_centerInParent="true"
+                                android:text="Post Upload"
+                                android:textSize="25dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <ImageButton
+                            android:id="@+id/fanpage"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:src="@drawable/fb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fanpage"
+                            android:layout_centerInParent="true"
+                            android:text="Fan Page"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_profile_home">
+
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/task"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:layout_marginTop="15dp"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:background="#00000000"-->
+                            <!--android:src="@drawable/task" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/task"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:text="Task"-->
+                            <!--android:textSize="25dp" />-->
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

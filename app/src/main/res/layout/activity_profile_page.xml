@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.nccu.mis.passpair.ProfilePage">
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:id="@+id/imageProfile"
+        android:layout_gravity="left|top"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="謝秉學"
+        android:id="@+id/txtProfileName"
+        android:layout_above="@+id/txtProfilePosts"
+        android:layout_toRightOf="@+id/imageProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imageProfile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="9"
+        android:id="@+id/txtProfileFriends"
+        android:layout_alignTop="@+id/txtProfile3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Friends"
+        android:textSize="20sp"
+        android:textColor="#BDBDBD"
+        android:id="@+id/txtProfile3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtProfileName"
+        android:layout_toLeftOf="@+id/ProfileEdit"
+        android:layout_toStartOf="@+id/ProfileEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtProfilePosts"
+        android:layout_above="@+id/txtProfileSignature"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtProfile3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Posts"
+        android:textColor="#BDBDBD"
+        android:id="@+id/txtProfile5"
+        android:layout_alignTop="@+id/txtProfile3"
+        android:layout_alignRight="@+id/txtProfileSignature"
+        android:layout_alignEnd="@+id/txtProfileSignature" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Love is not free place, is your heart"
+        android:id="@+id/txtProfileSignature"
+        android:layout_marginBottom="29dp"
+        android:layout_alignBottom="@+id/imageProfile"
+        android:layout_alignLeft="@+id/txtProfileName"
+        android:layout_alignStart="@+id/txtProfileName" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:id="@+id/ProfileEdit"
+        android:layout_above="@+id/txtProfile3"
+        android:layout_alignRight="@+id/txtProfileSignature"
+        android:layout_alignEnd="@+id/txtProfileSignature"
+        android:layout_alignParentTop="true"
+        android:background="#F0F0F0"
+        android:textSize="16sp"
+        android:textColor="#4F4F4F"/>
+    <com.roughike.bottombar.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/BottombarProfile"
+        android:layout_gravity="right|top"
+        android:layout_below="@id/imageProfile">
+    </com.roughike.bottombar.BottomBar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Replace_Profile_Fragment"
+        android:layout_below="@+id/BottombarProfile">
+    </FrameLayout>
+
+</RelativeLayout>

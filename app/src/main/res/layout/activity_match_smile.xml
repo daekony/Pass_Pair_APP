@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.Match.Smile">
+    <ImageView
+        android:id="@+id/smile_left"
+        android:src="@drawable/leftarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_toLeftOf="@+id/smile_photo"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/smile_photo"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/smile_right"
+        android:src="@drawable/rightarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/smile_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/smile_left" />
+
+    <ImageView
+        android:id="@+id/smile_photo"
+        android:src="@drawable/test"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/smile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        android:textSize="25sp"
+        android:layout_below="@+id/smile_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/smile_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="契合度：　　%"
+        android:textSize="25sp"
+        android:layout_below="@+id/smile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="送出邀請"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/smile_send"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

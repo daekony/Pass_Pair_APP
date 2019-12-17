@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.Gift.GiftReceived">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/user_photo"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#f1e6e6fa"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_level"
+        tools:text="新人"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/user_photo"
+        android:layout_alignLeft="@+id/user_rate"
+        android:layout_alignStart="@+id/user_rate" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_rate"
+        tools:text="目前積分：150"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_above="@+id/gift_rec_midline"
+        android:layout_toRightOf="@+id/user_photo"
+        android:layout_toEndOf="@+id/user_photo"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/gift_rec_midline"
+        android:layout_below="@+id/user_photo"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/gift_rec_midline">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gift_rec_none"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

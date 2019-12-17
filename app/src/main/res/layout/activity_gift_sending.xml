@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.Gift.GiftSending"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/friend_photo"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#f1e6e6fa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friend_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/friend_photo"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        tools:text="你想送給某某某什麼禮物呢？" />
+    <TextView
+        android:id="@+id/gift_send_userpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/friend"
+        android:text="您的積分: 0 分"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/gift_send_giftpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend"
+        android:layout_toRightOf="@+id/gift_send_userpoint"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/gift_send_userpoint"
+        android:text="已花費的積分: 0 分"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="60dp" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:id="@+id/send"
+            tools:text="送出"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.mis.passpair.RandomCall.QuestionRandomActivity">
+
+    <RelativeLayout
+        android:id="@+id/question_background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#B3E5FC">
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="請回答下列三個問題："
+            android:textColor="@color/text_color"
+            android:textSize="10pt" />
+
+
+        <TextView
+            android:id="@+id/question_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=" "
+            android:textColor="@color/text_color"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/question_spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/question_text"
+            android:layout_alignLeft="@+id/question_text"
+            android:layout_alignRight="@+id/question_text"
+            android:layout_alignStart="@+id/question_text"
+            android:layout_below="@+id/question_text1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/question_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_spinner1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=" "
+            android:textColor="@color/text_color"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/question_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/question_text"
+            android:layout_alignLeft="@+id/question_text"
+            android:layout_alignRight="@+id/question_text"
+            android:layout_alignStart="@+id/question_text"
+            android:layout_below="@+id/question_text2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/question_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_spinner2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=" "
+            android:textColor="@color/text_color"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/question_spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/question_text"
+            android:layout_alignLeft="@+id/question_text"
+            android:layout_alignRight="@+id/question_text"
+            android:layout_alignStart="@+id/question_text"
+            android:layout_below="@+id/question_text3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/qustion_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_spinner3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="提交答案"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/question_countdown"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qustion_submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="剩餘時間:"
+            android:textColor="#F44336"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

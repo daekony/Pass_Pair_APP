@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="edu.nccu.mis.passpair.Homepage.Friendpage.FriendPage">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/friendPage_image"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_gravity="left|top"
+        android:src="@drawable/image"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#f1e6e6fa"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.roughike.bottombar.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/friendPage_Bottombar"
+        android:layout_marginTop="150dp">
+
+    </com.roughike.bottombar.BottomBar>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="使用者名稱"
+        android:id="@+id/friendPage_txtName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/friendPage_image"
+        android:layout_toEndOf="@+id/friendPage_image"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/friendPage_txtPosts"
+        android:layout_toRightOf="@+id/friendPage_image"
+        android:layout_below="@+id/friendPage_txtName"
+        android:text="0  Post"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/friendPage_txtFriends"
+        android:text="0  Friend"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/friendPage_txtPosts"
+        android:layout_toEndOf="@+id/friendPage_txtPosts"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friendPage_image"
+        android:layout_below="@+id/friendPage_txtPosts"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Love is not free,the price is your heart"
+        android:textSize="20dp"
+        android:id="@+id/textView3" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Replace_friendPage_Fragment"
+        android:layout_below="@+id/friendPage_Bottombar">
+    </FrameLayout>
+</RelativeLayout>
